@@ -2,12 +2,11 @@
 
 适用于YII2的附件管理模块,主要是附件的统一保存,获取,暂时未做入库保存部分。
 
-[![Latest Stable Version](https://poser.pugx.org/yuncms/yii2-attachment/v/stable.png)](https://packagist.org/packages/yuncms/yii2-attachment)
-[![Total Downloads](https://poser.pugx.org/yuncms/yii2-attachment/downloads.png)](https://packagist.org/packages/yuncms/yii2-attachment)
-[![Reference Status](https://www.versioneye.com/php/yuncms:yii2-attachment/reference_badge.svg)](https://www.versioneye.com/php/yuncms:yii2-attachment/references)
-[![Build Status](https://img.shields.io/travis/yiisoft/yii2-attachment.svg)](http://travis-ci.org/yuncms/yii2-attachment)
-[![Dependency Status](https://www.versioneye.com/php/yuncms:yii2-attachment/dev-master/badge.png)](https://www.versioneye.com/php/yuncms:yii2-attachment/dev-master)
-[![License](https://poser.pugx.org/yuncms/yii2-attachment/license.svg)](https://packagist.org/packages/yuncms/yii2-attachment)
+[![Latest Stable Version](https://poser.pugx.org/yuncms/yuncms-attachment/v/stable.png)](https://packagist.org/packages/yuncms/yuncms-attachment)
+[![Total Downloads](https://poser.pugx.org/yuncms/yuncms-attachment/downloads.png)](https://packagist.org/packages/yuncms/yuncms-attachment)
+[![Build Status](https://img.shields.io/travis/yiisoft/yuncms-attachment.svg)](http://travis-ci.org/yuncms/yuncms-attachment)
+[![Dependency Status](https://www.versioneye.com/php/yuncms:yuncms-attachment/dev-master/badge.png)](https://www.versioneye.com/php/yuncms:yuncms-attachment/dev-master)
+[![License](https://poser.pugx.org/yuncms/yuncms-attachment/license.svg)](https://packagist.org/packages/yuncms/yuncms-attachment)
 
 ## Installation
 
