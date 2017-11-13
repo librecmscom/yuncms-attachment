@@ -1,0 +1,51 @@
+{
+  "name": "yuncms/yii2-attachment",
+  "description": "The attachment module for yuncms.",
+  "keywords": [
+    "yii2",
+    "yii2-attachment",
+    "attachment management"
+  ],
+  "type": "yii2-extension",
+  "license": "MIT",
+  "require": {
+    "yiisoft/yii2": "~2.0.6",
+    "yiisoft/yii2-httpclient": "~2.0.0",
+    "yuncms/yuncms-admin": "~2.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "yuncms\\attachment\\": ""
+    }
+  },
+  "extra": {
+    "yuncms": {
+      "name": "attachment",
+      "i18n": {
+        "class": "yii\\i18n\\PhpMessageSource",
+        "sourceLanguage": "en-US",
+        "basePath": "@yuncms/attachment/messages"
+      },
+      "migrationNamespace": "yuncms\\attachment\\migrations",
+      "backend": {
+        "class": "yuncms\\attachment\\backend\\Module"
+      },
+      "frontend": {
+        "class": "yuncms\\attachment\\frontend\\Module"
+      }
+    },
+    "branch-alias": {
+      "dev-master": "2.0-dev"
+    }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    },
+    {
+      "type": "composer",
+      "url": "https://packagist.phpcomposer.com"
+    }
+  ]
+}
