@@ -4,9 +4,10 @@ namespace yuncms\attachment\migrations;
 
 use yii\db\Migration;
 
-class M170214085652Add_backend_menu extends Migration
+class M171113065059Add_backend_menu extends Migration
 {
-    public function up()
+
+    public function safeUp()
     {
         $this->insert('{{%admin_menu}}', [
             'name' => '附件设置',
@@ -27,7 +28,7 @@ class M170214085652Add_backend_menu extends Migration
         ]);
     }
 
-    public function down()
+    public function safeDown()
     {
         $id = (new \yii\db\Query())->select(['id'])->from('{{%admin_menu}}')->where(['name' => '附件设置', 'parent' => 2])->scalar($this->getDb());
         $this->delete('{{%admin_menu}}', ['parent' => $id]);
@@ -38,14 +39,19 @@ class M170214085652Add_backend_menu extends Migration
         $this->delete('{{%admin_menu}}', ['id' => $id]);
     }
 
+
     /*
-    // Use safeUp/safeDown to run migration code within a transaction
-    public function safeUp()
+    // Use up()/down() to run migration code without a transaction.
+    public function up()
     {
+
     }
 
-    public function safeDown()
+    public function down()
     {
+        echo "M171113065059Add_backend_menu cannot be reverted.\n";
+
+        return false;
     }
     */
 }

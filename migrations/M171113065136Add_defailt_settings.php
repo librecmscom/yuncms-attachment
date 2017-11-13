@@ -5,14 +5,9 @@ namespace yuncms\attachment\migrations;
 use Yii;
 use yii\db\Migration;
 
-/**
- * Class M170916073830Add_defailt_settings
- */
-class M170916073830Add_defailt_settings extends Migration
+class M171113065136Add_defailt_settings extends Migration
 {
-    /**
-     * @inheritdoc
-     */
+
     public function safeUp()
     {
         $this->batchInsert('{{%settings}}', ['type','section','key','value','active','created','modified'], [
@@ -30,15 +25,14 @@ class M170916073830Add_defailt_settings extends Migration
         ]);
 
         Yii::$app->settings->clearCache();
+
     }
 
-    /**
-     * @inheritdoc
-     */
     public function safeDown()
     {
         $this->delete('{{%settings}}', ['section' => 'attachment']);
     }
+
 
     /*
     // Use up()/down() to run migration code without a transaction.
@@ -49,7 +43,7 @@ class M170916073830Add_defailt_settings extends Migration
 
     public function down()
     {
-        echo "M170916073830Add_defailt_settings cannot be reverted.\n";
+        echo "M171113065136Add_defailt_settings cannot be reverted.\n";
 
         return false;
     }

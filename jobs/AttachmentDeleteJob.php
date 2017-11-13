@@ -7,16 +7,14 @@
 
 namespace yuncms\attachment\jobs;
 
-use Yii;
-use yii\base\Object;
-use yii\queue\Queue;
+use yii\base\BaseObject;
 use yii\queue\RetryableJob;
 use yii\base\Exception;
 
 /**
  * Class AttachmentDeleteJob.
  */
-class AttachmentDeleteJob extends Object implements RetryableJob
+class AttachmentDeleteJob extends BaseObject implements RetryableJob
 {
     /**
      * @var string 文件路径

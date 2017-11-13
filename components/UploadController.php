@@ -7,12 +7,9 @@
 
 namespace yuncms\attachment\components;
 
-use Yii;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
-use yii\web\Response;
-use yii\web\UploadedFile;
 
 /**
  * Class UploadController

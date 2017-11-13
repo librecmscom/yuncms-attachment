@@ -18,7 +18,7 @@ class AttachmentSearch extends Attachment
     public function rules()
     {
         return [
-            [['id', 'user_id', 'size', 'created_at'], 'integer'],
+            [['id', 'user_id', 'size'], 'integer'],
             [['filename', 'original_name', 'type', 'path', 'ip'], 'safe'],
         ];
     }

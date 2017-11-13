@@ -31,6 +31,8 @@ use yuncms\user\models\User;
  * @property int $created_at 创建时间
  *
  * @property-read string $url WEB访问路径
+ * @property-read User $user
+ *
  * @package yuncms\attachment\models
  */
 class Attachment extends ActiveRecord
