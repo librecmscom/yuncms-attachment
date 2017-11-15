@@ -4,7 +4,7 @@ namespace yuncms\attachment\migrations;
 
 use yii\db\Migration;
 
-class M171113064924Create_attachment_table extends Migration
+class M171113072750Create_attachment_table extends Migration
 {
 
     public function safeUp()
@@ -25,7 +25,7 @@ class M171113064924Create_attachment_table extends Migration
             'ip' => $this->string(255)->notNull()->comment('Ip'),
             'created_at' => $this->integer()->unsigned()->notNull()->comment('Created At'),
         ], $tableOptions);
-        //$this->addForeignKey('{{%attachment_fk_1}}', '{{%attachment}}', 'user_id', '{{%user}}', 'id', 'CASCADE', 'CASCADE');
+        $this->addForeignKey('{{%attachment_fk_1}}', '{{%attachment}}', 'user_id', '{{%user}}', 'id', 'CASCADE', 'CASCADE');
     }
 
     public function safeDown()
@@ -43,7 +43,7 @@ class M171113064924Create_attachment_table extends Migration
 
     public function down()
     {
-        echo "M171113064924Create_attachment_table cannot be reverted.\n";
+        echo "M171113072750Create_attachment_table cannot be reverted.\n";
 
         return false;
     }
