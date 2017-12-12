@@ -21,8 +21,8 @@
   },
   "extra": {
     "yuncms": {
-      "name": "attachment",
-      "i18n": {
+      "id": "attachment",
+      "translate": {
         "class": "yii\\i18n\\PhpMessageSource",
         "sourceLanguage": "en-US",
         "basePath": "@yuncms/attachment/messages"
